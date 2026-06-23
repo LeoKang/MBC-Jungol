@@ -1,4 +1,4 @@
-package Q502;
+package q502;
 
 public class Main {
     public static void main() {

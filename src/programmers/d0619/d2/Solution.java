@@ -12,16 +12,21 @@ class Solution {
 
         List<String> result = new ArrayList<>();
         for (String s : splitArr) {
-            if(!s.isEmpty()){
+            if (!s.isEmpty()) {
                 result.add(s);
             }
         }
 
         if (result.isEmpty()) {
-            return new String[] {"EMPTY"};
+            return new String[]{"EMPTY"};
         }
 
         return result.toArray(new String[0]);
+    }
+
+    public static void main(String[] args) {
+        Solution s = new Solution();
+        System.out.println(s.solution("baconlettucetomato"));
     }
 }
 /*
