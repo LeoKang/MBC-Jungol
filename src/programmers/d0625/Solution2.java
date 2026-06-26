@@ -27,33 +27,28 @@ class Solution2 {
     }
 }
 
-
-
-
-    public int solution(int n) {
-        int answer = 0;
-        StringBuilder sb = new StringBuilder();
-
-        for (int i = 1; i <= n; i++) {
-            answer++;
-
-            while (true) {
-                sb.setLength(0);
-                sb.append(answer);
-
-                if (answer % 3 == 0 || sb.indexOf("3") != -1) {
-                    answer++;
-                } else {
-                    break;
-                }
-            }
-        }
-
-        return answer;
-    }
-}
-
-
+//    public int solution(int n) {
+//        int answer = 0;
+//        StringBuilder sb = new StringBuilder();
+//
+//        for (int i = 1; i <= n; i++) {
+//            answer++;
+//
+//            while (true) {
+//                sb.setLength(0);
+//                sb.append(answer);
+//
+//                if (answer % 3 == 0 || sb.indexOf("3") != -1) {
+//                    answer++;
+//                } else {
+//                    break;
+//                }
+//            }
+//        }
+//
+//        return answer;
+//    }
+//}
 
 //public class Solution2 {
 //    public int solution(int n) {
