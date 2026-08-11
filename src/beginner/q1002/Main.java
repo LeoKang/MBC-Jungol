@@ -53,50 +53,50 @@ res
 
  */
 
-import java.util.Scanner;
-
-public class Main {
-    public static int gcd(int p, int q) {
-        if (q == 0) return p;
-        return gcd(q, p % q);
-    }
-
-    public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        int N = input.nextInt();
-        int[] ar = new int[N];
-        for (int i = 0; i < N; i++) {
-            ar[i] = input.nextInt();
-        }
-        input.close();
-
-        // print
+//import java.util.Scanner;
+//
+//public class Main {
+//    public static int gcd(int p, int q) {
+//        if (q == 0) return p;
+//        return gcd(q, p % q);
+//    }
+//
+//    public static void main(String[] args) {
+//        Scanner input = new Scanner(System.in);
+//        int N = input.nextInt();
+//        int[] ar = new int[N];
+//        for (int i = 0; i < N; i++) {
+//            ar[i] = input.nextInt();
+//        }
+//        input.close();
+//
+//        // print
+////        for (int i = 0; i < N; i++) {
+////            System.out.print(ar[i] + " ");
+////        }
+//
+//        // gcd
+//        int gcdRes = ar[0];
+//        for (int i = 1; i < N; i++) {
+//            gcdRes = gcd(gcdRes, ar[i]);
+//        }
+//
+//        System.out.print(gcdRes + " ");
+//
+//        // lcm
+//        for (int i = 0; i < N; i++) {
+//            ar[i] /= gcdRes;
+//        }
+//
+//        // print
 //        for (int i = 0; i < N; i++) {
 //            System.out.print(ar[i] + " ");
 //        }
-
-        // gcd
-        int gcdRes = ar[0];
-        for (int i = 1; i < N; i++) {
-            gcdRes = gcd(gcdRes, ar[i]);
-        }
-
-        System.out.print(gcdRes + " ");
-
-        // lcm
-        for (int i = 0; i < N; i++) {
-            ar[i] /= gcdRes;
-        }
-
-        // print
-        for (int i = 0; i < N; i++) {
-            System.out.print(ar[i] + " ");
-        }
-
-        int lcmRes = gcdRes;
-        for (int i = 0; i < N; i++) {
-            lcmRes *= ar[i];
-        }
-        System.out.println(lcmRes);
-    }
-}
+//
+//        int lcmRes = gcdRes;
+//        for (int i = 0; i < N; i++) {
+//            lcmRes *= ar[i];
+//        }
+//        System.out.println(lcmRes);
+//    }
+//}
